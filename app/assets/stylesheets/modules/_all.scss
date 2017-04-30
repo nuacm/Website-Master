@@ -1,0 +1,22 @@
+/* 
+------ Rules for Modules ------
+Reference to include all modules in a file
+A Module is a:
+- Mixin
+- Function
+- Variable definition
+- ? Placeholder selector ?
+
+
+Modules in this context will never output code themselves - but will rather be tools to control output
+ex..
+Module: $primary-color: #ffffff
+Output: .header { color: $primary-collor; }
+
+Each functional module (_all excluded) should have a primary mixin returning the full output of that module
+*/
+
+@import "modules/colors";
+@import "modules/shadows";
+@import "modules/typography";
+@import "modules/buttons";

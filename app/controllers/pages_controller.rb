@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-
+	
 	# display a view in the pages directory, also used for index
 	def show
 		if valid_page?
@@ -14,5 +14,4 @@ class PagesController < ApplicationController
 	def valid_page?
 		File.exist?(Pathname.new(Rails.root + "app/views/pages/#{params[:page]}.html.erb"))
 	end
-
 end

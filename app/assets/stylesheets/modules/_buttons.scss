@@ -1,0 +1,29 @@
+// Primary Mixin
+@include "modules/colors";
+@include "modules/typography";
+@include "modules/shadows";
+
+@mixin buttons {
+	a.button, button, .button a {
+		@include button($primary-color, $secondary-color);
+	}
+}
+
+@mixin button($bg-color, $text-color) {
+	font: 20px;
+	font-family: $default-font-family;
+	@include colored-button($bg-color, $text-color);
+	&.hover { 
+		@include colored-button($bg-color, lighten($text-color, 5%));
+		
+	}
+	&.active {
+		@include colored-button(darken($bg-color, 10%), $text-color);
+	}
+}
+
+@mixin colored-button($bg-color, $text-color) {
+	border-radius: 3px;
+	border: 1px solid mix($bg-color, $text-color);
+
+}
