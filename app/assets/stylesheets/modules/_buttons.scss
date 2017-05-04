@@ -1,5 +1,4 @@
 // Primary Mixin
-
 @mixin buttons {
 	a.button, button, .button a {
 		@include button($primary-color, $secondary-color);
