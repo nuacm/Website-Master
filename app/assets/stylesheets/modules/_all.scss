@@ -16,7 +16,8 @@ Output: .header { color: $primary-collor; }
 Each functional module (_all excluded) should have a primary mixin returning the full output of that module
 */
 
-@import "colors";
-@import "shadows";
-@import "typography";
-@import "buttons";
+@import 
+	'colors',
+	'shadows',
+	'typography',
+	'buttons';
