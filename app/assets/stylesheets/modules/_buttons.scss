@@ -1,7 +1,4 @@
 // Primary Mixin
-@include "modules/colors";
-@include "modules/typography";
-@include "modules/shadows";
 
 @mixin buttons {
 	a.button, button, .button a {
