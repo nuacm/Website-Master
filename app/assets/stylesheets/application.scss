@@ -15,5 +15,8 @@
 	'bootstrap-sprockets',
 	'bootstrap';
 
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 @import 
-	'partials/all';
+	'partials/base';

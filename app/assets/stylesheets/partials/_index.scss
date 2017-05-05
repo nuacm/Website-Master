@@ -1,8 +1,10 @@
 /*
 Partial for Index.html
 */
-@import "modules/all";
+@import "modules/base";
+@include buttons();
+@include typography();
 
-button {
-	@include buttons();
+h3 {
+	margin-top: 40px;
 }
