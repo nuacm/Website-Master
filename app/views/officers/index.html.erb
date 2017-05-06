@@ -1,0 +1,16 @@
+<%= render 'shared/header' %>
+<div class='col-xl-1 col-md-1'></div>
+<div class='row'>
+	<div class='col-xl-12 col-md-12 col-sm-12 col-xs 12'>
+		<% @officers.each do |officer| %>
+			<div class='officer-bio'>
+				<div class='col-xl-4 col-md-4 col-sm-4 col-xs-6'>
+					<h4> <%= officer.name %> </h4>
+					<h5> <%= officer.year %> <br> <%= officer.position %> </h5>
+					<%= image_tag officer.image_path, alt: "Officer Photo", class: "officer-image", size: "200x200" %>
+				</div>
+			</div>
+		<% end %>
+	</div>
+</div>
+

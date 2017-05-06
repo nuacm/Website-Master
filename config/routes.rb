@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   root 'pages#show', page: "index"
 
+  resources :officers
+
   Rails.application.routes.draw do
   	get "pages/:page" => "pages#show"
   end
