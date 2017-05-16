@@ -1,4 +1,4 @@
 // Primary Mixin
-@mixin shadows {
-	box-shadow: 0 14px 26px -12px rgba(0,0,0, 0.42), 0 4px 23px 0px rgba(0,0,0, 0.12), 0 8px 10px -5px rgba(0,0,0, 0.02);
+@mixin shadows($percent-effect) {
+	box-shadow: 0 14px 26px -12px rgba(0,0,0, 0.42 * $percent-effect * .01), 0 4px 23px 0px rgba(0,0,0, 0.12 * $percent-effect *.01), 0 8px 10px -5px rgba(0,0,0, 0.02);
 }
