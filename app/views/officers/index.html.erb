@@ -2,9 +2,9 @@
 	<div class='container'>
 		<div class='row'>
 			<div class='officers'>
-				<div class='col-md-10 col-xs 12 col-md-offset-1'>
+				<div class='col-xs-12'>
 					<% @officers.each do |officer| %>
-						<div class='col-sm-4 col-xs-12'>
+						<div class='col-sm-4 col-xs-10 col-sm-offset-0 col-xs-offset-1'>
 							<div class='officer-bio'>
 								<%= image_tag officer.image_path, alt: "Officer Photo", class: "officer-image" %>
 								<div class='officer-text text-center'>

@@ -2,11 +2,11 @@ class OfficersController < ApplicationController
 
 	def new
 		@officer = new Officer
-		@officer
 	end
 
 	def create
 		@officer = Officer.new(officer_params)
+		@officer.save
 	end
 
 	def index
