@@ -8,20 +8,21 @@
 .officer-bio {
 	background-color: $white;
 	margin: 15px 0px 40px 0px;
-	@include shadows(30);
+	@include shadows(70);
 	.officer-image {
 		width: 100%;
 	}
 
 	.officer-text {
-		padding: 10px;
-		@include shadows(40);
+		padding: 10px 10px 20px 10px;
 
 		a {
 			padding: 5px 8px 5px 8px;
 			margin: 3px;
 			border: 1px solid $light-gray;
 			color: $dark-navy;
+			text-decoration: none;
+			@include shadows(30);
 		}
 	}
 }
