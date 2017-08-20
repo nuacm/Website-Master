@@ -1,0 +1,19 @@
+.navbar {
+  padding: 20px 0px 20px 0px;
+  background-color: $white;
+  box-shadow: $base-box-shadow;
+
+  .logo {
+    margin-top: 15px;
+  }
+
+  .navbuttons {
+    float: right;
+    margin-top: 15px;
+
+    ul {
+      padding: 10px 0px 10px 0px;
+      text-align: right;
+    }
+  }
+}

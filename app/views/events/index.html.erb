@@ -1,0 +1,17 @@
+<%= render "shared/header" %>
+<div class="container">
+	<div class="page-heading">
+		<h2> Upcoming Events </h2>
+	</div>
+	<div class="event-listing">
+		<% @events.each do |event| %>
+			<%= link_to event_path(event), class: "Event" do %>
+				<h4><%= event.abbreviated_date %></h4>
+				<h4><%= event.day_of_week %></h4>
+				<h4><%= event.title %></h4>
+				<h4><%= event.host %></h4>
+			<% end %>
+		<% end %>
+	</div>
+</div>
+<%= render "shared/footer" %>
