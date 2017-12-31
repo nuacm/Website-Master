@@ -1,14 +1,18 @@
-# SQLite version 3.x
-#   gem install sqlite3
-#
-#   Ensure the SQLite 3 gem is defined in your Gemfile
-#   gem 'sqlite3'
-#
 default: &default
   adapter: postgresql
-  database: x
-  username: x
-  password: x
-  encoding: unicode
+  host: <%= ENV['HEROKU_PG_HOST'] %>
+  port: <%= ENV['HEROKU_PG_PORT'] %>
+  database: <%= ENV['HEROKU_PG_DATABASE'] %>
+  username: <%= ENV['HEROKU_PG_USERNAME'] %>
+  password: <%= ENV['HEROKU_PG_PASSWORD'] %>
   pool: 5
   timeout: 5000
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
