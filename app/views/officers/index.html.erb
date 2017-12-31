@@ -1,26 +1,23 @@
-<%= render "shared/header" %>
-	<div class="container">
-		<div class="row">
-			<div class="officers">
-				<div class="col-xs-12">
-					<% @officers.each do |officer| %>
-						<div class="col-sm-4 col-xs-10 col-sm-offset-0 col-xs-offset-1">
-							<div class="officer-bio">
-								<%= image_tag officer.image_path, alt: "Officer Photo", class: "officer-image" %>
-								<div class="officer-text text-center">
-									<h4><%= officer.name %> <br></h4>
-									<p>
-										<sub><%= officer.position %><br><%= officer.year %></sub>
-									</p>
-
-									<a href="#"> <%= icon("github") %></a>
-									<a href="#"> <%= icon("linkedin") %> </a>
-								</div>
+<div class="container">
+	<div class="row">
+		<div class="officers">
+			<div class="col-xs-12">
+				<% @officers.each do |officer| %>
+					<div class="col-sm-4 col-xs-10 col-sm-offset-0 col-xs-offset-1">
+						<div class="officer-bio">
+							<%= image_tag officer.image_path, alt: "Officer Photo", class: "officer-image" %>
+							<div class="officer-text text-center">
+								<h4><%= officer.name %> <br></h4>
+								<p>
+									<sub><%= officer.position %><br><%= officer.year %></sub>
+								</p>
+								<a href="#"> <%= icon("github") %></a>
+								<a href="#"> <%= icon("linkedin") %> </a>
 							</div>
 						</div>
-					<% end %>
-				</div>
+					</div>
+				<% end %>
 			</div>
 		</div>
 	</div>
-<%= render "shared/footer" %>
+</div>

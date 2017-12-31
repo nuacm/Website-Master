@@ -1,26 +1,24 @@
 <body>
-	<%= render "shared/header" %>
 		<div class="row main">
 			<div class='col-xl-2 col-md-2 col-sm-1 col-xs-1'></div>
 			<div class="col-xl-8 col-md-8 col-sm-10 col-xs-10">
-				<h3>Mission</h3>
+				<h3><%= t("home.mission") %></h3>
 				<p>
 					As leaders of the Northeastern University chapter of the Association of Computing Machinery, our goal is to expose students to a diverse range of computer science topics, and build a community within the university. We believe that there's a lot more to computer science than what you see in the classroom, and we bring people together by hosting events that further their knowledge of the field.
 				</p>
-				<h3>Events</h3>
+				<h3><%= t("home.events") %></h3>
 				<p>
-					We have meetings every <strong>Wednesday at 19:30</strong> during the academic year. We usually meet in <strong>102 West Village G</strong>, which is located at 440 Huntington Avenue. Our past events include tech talks, workshops, coding competitions, and many others. Event dates and locations may change from week to week.
+					We have meetings every <strong><%= t("global.meeting_composite") %></strong> during the academic year. We usually meet in <strong><%= t("global.meeting_room") %></strong>, which is located at 440 Huntington Avenue. Our past events include tech talks, workshops, coding competitions, and many others. Event dates and locations may change from week to week.
 				</p>
 				<p>
 					To find out more about our upcoming events, please check our
-					<a href="https://www.facebook.com/nuacm">facebook page</a>. We use facebook for most of our event scheduling purposes, so it is updated very regularly. You can also sign up for our <a href="http://eepurl.com/EkKhD">mailing list</a> to receive event updates by email.
+					<%= link_to t("links.facebook"), facebook_page_link %>. We use facebook for most of our event scheduling purposes, so it is updated very regularly. You can also sign up for our <%= link_to t("links.mailing_list"), mailing_list_link %> to receive event updates by email.
 				</p>
-				<h3>Contact</h3>
+				<h3><%= t("home.contact") %></h3>
 				<p>
 					For general questions, comments, or event suggestions, the best way to reach us is by email at <a href='mail&#116;o&#58;&#37;61&#99;m&#64;cc&#115;&#46;&#110;&#37;&#54;&#53;u&#46;e&#100;u'>&#97;cm&#64;c&#99;s&#46;neu&#46;edu</a>. We are always looking for speakers and event partners, so please contact us if you'd like to work together!
 				</p>
 			</div>
 		</div>
 		</div>
-		<%= render "shared/footer" %>
 </body>
