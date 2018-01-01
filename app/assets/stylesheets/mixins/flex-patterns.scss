@@ -1,0 +1,12 @@
+@mixin flex-column() {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-responsive() {
+  display: flex;
+
+  @include media-down($medium-screen) {
+    flex-direction: column;
+  }
+}

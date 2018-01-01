@@ -7,17 +7,19 @@
 						<%= image_tag officer.image_path, alt: "Officer Photo", class: "officer-image" %>
 					</div>
 				<% end %>
-				<div class="officer-line-item">
-					<div class="officer-line-item-label"><%= t("officers.bio.labels.name") %></div>
-					<div class="officer-line-item-info"><%= officer.name %></div>
-				</div>
-				<div class="officer-line-item">
-					<div class="officer-line-item-label"><%= t("officers.bio.labels.year") %></div>
-					<div class="officer-line-item-info"><%= officer.year %></div>
-				</div>
-				<div class="officer-line-item">
-					<div class="officer-line-item-label"><%= t("officers.bio.labels.position") %></div>
-					<div class="officer-line-item-info"><%= officer.position %></div>
+				<div class="col-line-items">
+					<div class="col-line-item">
+						<div class="col-line-item-label"><%= t("officers.bio.labels.name") %></div>
+						<div class="col-line-item-info"><%= officer.name %></div>
+					</div>
+					<div class="col-line-item">
+						<div class="col-line-item-label"><%= t("officers.bio.labels.year") %></div>
+						<div class="col-line-item-info"><%= officer.year %></div>
+					</div>
+					<div class="col-line-item">
+						<div class="col-line-item-label"><%= t("officers.bio.labels.position") %></div>
+						<div class="col-line-item-info"><%= officer.position %></div>
+					</div>
 				</div>
 			</div>
 		<% end %>
