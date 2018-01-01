@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  devise_for :users
 
   root 'pages#show', page: "index"
 
@@ -8,7 +8,6 @@ Rails.application.routes.draw do
   resources :events, path: "events", only: %i(index create show)
 
   Rails.application.routes.draw do
-  	get "pages/:page" => "pages#show"
+   get "pages/:page" => "pages#show"
   end
-
 end

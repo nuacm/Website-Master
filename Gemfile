@@ -12,6 +12,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'font-awesome-sass'
 gem 'pg'
 gem 'bourbon'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug', platform: :mri
