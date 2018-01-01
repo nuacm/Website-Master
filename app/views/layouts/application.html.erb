@@ -4,13 +4,18 @@
     <title>NUACM</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
   </head>
 
   <body>
     <%= render "shared/header" %>
-    <%= yield %>
+    <div class="main">
+      <main role="main">
+        <%= yield %>
+      </main>
+    </div>
     <%= render "shared/footer" %>
   </body>
 </html>
