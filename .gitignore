@@ -7,6 +7,8 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-
 .byebug_history
-/public/*
+/public/**
+
+/public/packs
+/node_modules
