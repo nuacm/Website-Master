@@ -1,27 +1,27 @@
 .officers {
+	display: flex;
 	margin: 200px 0px 100px 0px;
 	position: relative;
-}
 
-.officer-bio {
-	background-color: $white;
-	box-shadow: $base-box-shadow;
-	margin: 15px 0px 40px 0px;
-
-	.officer-image {
-		width: 100%;
+	.officer-bio {
+    @include margin(10px);
+    @include padding(10px);
+    background-color: $light-gray;
+    border: $base-border;
+    border-radius: $base-border-radius;
+		flex: 0 1 calc(33% - 40px);
 	}
 
-	.officer-text {
-		padding: 10px 10px 20px 10px;
+  .officer-line-item {
+    @include margin(10px null);
+  }
 
-		a {
-			padding: 5px 8px 5px 8px;
-			margin: 3px;
-			border: 1px solid $light-gray;
-			color: $dark-navy;
-			text-decoration: none;
-			box-shadow: $base-box-shadow;
-		}
-	}
+  .officer-line-item-label {
+    font-size: 12px;
+    color: $medium-gray;
+  }
+
+  .officer-line-item-info {
+
+  }
 }

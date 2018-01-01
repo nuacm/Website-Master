@@ -1,0 +1,33 @@
+.container,
+.container-for-grid {
+  @include margin(null auto);
+}
+
+.container {
+  @include padding(null $gutter-size);
+  max-width: $container-width;
+}
+
+.container-small {
+  max-width: $container-width * 0.65;
+}
+
+.container-not-padded {
+  @include padding(null 0);
+}
+
+.container-not-padded-mobile {
+  @include padding(null 0);
+
+  @include media-up($medium-screen) {
+    @include padding(null $gutter-size);
+  }
+}
+
+.container-not-padded-mobile-and-tablet {
+  @include padding(null 0);
+
+  @include media-up($large-screen) {
+    @include padding(null $gutter-size);
+  }
+}

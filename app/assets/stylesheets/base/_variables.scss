@@ -17,5 +17,19 @@ $dark-gray: #1f2323;
 $action-color: $light-gray;
 $action-color-hover: $medium-gray;
 
+// Borders
+$base-border-color: #d5d8dc;
+$base-border-radius: 4px;
+$base-border: $base-border-color 2px solid;
+
 //Shadows
 $base-box-shadow:	0 14px 26px -12px rgba(0,0,0, 0.42), 0 4px 23px 0px rgba(0,0,0, 0.12), 0 8px 10px -5px rgba(0,0,0, 0.02);
+
+//Sizes
+$container-width: 1440px;
+$gutter-size: 20px;
+
+// Breakpoints
+$large-screen: $container-width;
+$medium-screen: 768px;
+$small-screen: 325px;

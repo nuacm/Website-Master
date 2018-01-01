@@ -15,3 +15,10 @@ en:
       mission: "Mission"
       events: "Events"
       contact: "Contact"
+  officers:
+    bio:
+      labels:
+        name: "Name"
+        position: "Position"
+        year: "Year"
+

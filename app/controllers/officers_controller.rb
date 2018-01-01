@@ -2,7 +2,9 @@ class OfficersController < ApplicationController
 
 	def create
 		@officer = Officer.new(officer_params)
-		@officer.save
+		if @officer.save
+			index
+		end
 	end
 
 	def index
