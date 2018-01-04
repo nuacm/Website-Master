@@ -7,7 +7,8 @@ class EventsController < ApplicationController
 	end
 
   def new
-    @event = Event.new
+    # disabled until auth for event creation is implemented
+    #@event = Event.new
   end
 
   def create
