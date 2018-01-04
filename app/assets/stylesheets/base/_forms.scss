@@ -1,0 +1,15 @@
+input,
+textarea,
+button {
+  outline: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+textarea {
+  resize: vertical;
+}
+
+label {
+  color: $medium-gray;
+}

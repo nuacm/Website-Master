@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   root 'pages#show', page: "index"
 
   resources :officers, path: "officers", only: %i(create index)
-  resources :events, path: "events", only: %i(index create show)
+  resources :events, path: "events", only: %i(index new create show)
 
   Rails.application.routes.draw do
    get "pages/:page" => "pages#show"

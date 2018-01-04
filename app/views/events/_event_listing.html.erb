@@ -1,6 +1,6 @@
 <%= link_to event_path(event), class: "Event" do %>
-  <h4><%= event.abbreviated_date %></h4>
-  <h4><%= event.day_of_week %></h4>
-  <h4><%= event.title %></h4>
-  <h4><%= event.host %></h4>
+  <%= event.headline %>
+  <%= event.abstract %>
+  <%= event.start_time %>
+  <%= event.speaker %>
 <% end %>
