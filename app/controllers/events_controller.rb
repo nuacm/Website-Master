@@ -1,7 +1,9 @@
 class EventsController < ApplicationController
 
 	def index
-		@events = Event.all
+		@events = Event.all.map do |event|
+      EventPresenter.new(event)
+    end
 	end
 
   def new
@@ -20,6 +22,6 @@ class EventsController < ApplicationController
 	private
 
 	def event_params
-		params.require(:event).permit(:headline, :abstract, :location, :date, :start_time, :speaker, :company, :company_logo)
+		params.require(:event).permit(:headline, :abstract, :location, :date_time, :speaker, :company, :company_logo)
 	end
 end

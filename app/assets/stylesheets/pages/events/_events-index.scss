@@ -1,0 +1,16 @@
+.event-information {
+  @include padding(15px);
+  @include margin(20px null);
+  border: $base-border;
+  color: $text-color;
+  width: 75%;
+}
+
+.event-headline {
+  margin: 0;
+}
+
+.event-detail {
+  @include margin(10px null);
+  font-size: 16px;
+}

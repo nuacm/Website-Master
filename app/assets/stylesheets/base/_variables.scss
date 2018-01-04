@@ -13,9 +13,15 @@ $dark-navy: #114054;
 $light-gray: #f3f6f8;
 $medium-gray: #4c5454;
 $dark-gray: #1f2323;
+$text-color: $dark-gray;
 
 $action-color: $light-gray;
 $action-color-hover: $medium-gray;
+
+// Font weights
+$normal-font-weight: 400;
+$semibold-font-weight: 600;
+$bold-font-weight: 700;
 
 // Borders
 $base-border-color: #d5d8dc;

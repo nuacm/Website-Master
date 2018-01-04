@@ -14,7 +14,7 @@
 	}
 
   .officer-image {
-    @include size(100px, 100px);
+    @include size(100px);
     align-self: center;
     border: $base-border;
     border-radius: 50%;

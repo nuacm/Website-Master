@@ -24,4 +24,9 @@ en:
   events:
     headlines:
       upcoming_events: "Upcoming Events"
+    labels:
+      speaker: "Speaker"
+      company: "Sponsored By"
+      abstract: "Abstract"
+      time: "Time"
 
