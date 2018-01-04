@@ -4,31 +4,35 @@
   <div class="event-information">
     <h3 class="event-headline"><%= event.headline %></h3>
 
-    <div class="event-detail">
-      <div class="visual-label"><%= t("events.labels.speaker") %></div>
-      <%= event.speaker %>
-    </div>
-
+    <div class="event-row">
+      <div class="event-detail">
+        <div class="visual-label"><%= t("events.labels.speaker") %></div>
+        <%= event.speaker %>
+      </div>
     <% if event.company.present? %>
       <div class="event-detail">
         <div class="visual-label"><%= t("events.labels.company") %></div>
         <%= event.company %>
       </div>
     <% end %>
-
-    <div class="event-detail">
-      <div class="visual-label"><%= t("events.labels.abstract") %></div>
-      <%= event.abstract %>
     </div>
 
-    <div class="event-detail">
-      <div class="visual-label"><%= t("events.labels.time") %></div>
-      <%= event.full_time %>
+    <div class="event-row">
+      <div class="event-detail">
+        <div class="visual-label"><%= t("events.labels.abstract") %></div>
+        <%= event.abstract %>
+      </div>
     </div>
 
-    <div class="event-detail">
-      <div class="visual-label"><%= t("events.labels.location") %></div>
-      <%= event.location %>
+    <div class="event-row">
+      <div class="event-detail">
+        <div class="visual-label"><%= t("events.labels.time") %></div>
+        <%= event.full_time %>
+      </div>
+      <div class="event-detail">
+        <div class="visual-label"><%= t("events.labels.location") %></div>
+        <%#= event.location %>
+      </div>
     </div>
   </div>
 <%  end %>
