@@ -1,0 +1,13 @@
+.form-row {
+  @include margin(20px null);
+  @include flex-responsive();
+}
+
+.form-input {
+  @include margin(10px null);
+  @include flex-column();
+
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+}

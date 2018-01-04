@@ -1,0 +1,23 @@
+.event-information {
+  @include padding(15px);
+  @include margin(20px null);
+  background-color: $white;
+  border: $base-border;
+  border-radius: $base-border-radius;
+  color: $text-color;
+  width: 75%;
+}
+
+.event-headline {
+  margin: 0;
+}
+
+.event-row {
+  @include flex-responsive();
+  @include margin(15px null);
+  font-size: 16px;
+}
+
+.event-detail {
+  flex: 1 50%;
+}

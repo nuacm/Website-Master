@@ -21,4 +21,12 @@ en:
         name: "Name"
         position: "Position"
         year: "Year"
+  events:
+    headlines:
+      upcoming_events: "Upcoming Events"
+    labels:
+      speaker: "Speaker"
+      company: "Sponsored By"
+      abstract: "Abstract"
+      time: "Time"
 
