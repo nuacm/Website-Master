@@ -10,6 +10,8 @@ en:
   nav:
     events: "Events"
     officers: "Officers"
+    login: "Sign In"
+    logout: "Sign Out"
   home:
     headers:
       mission: "Mission"
@@ -29,4 +31,3 @@ en:
       company: "Sponsored By"
       abstract: "Abstract"
       time: "Time"
-

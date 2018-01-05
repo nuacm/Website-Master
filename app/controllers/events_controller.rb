@@ -1,4 +1,5 @@
 class EventsController < ApplicationController
+  before_action :authenticate_as_admin, only: [:new, :create]
 
 	def index
 		@events = Event.all.map do |event|
@@ -7,8 +8,7 @@ class EventsController < ApplicationController
 	end
 
   def new
-    # disabled until auth for event creation is implemented
-    #@event = Event.new
+    @event = Event.new
   end
 
   def create

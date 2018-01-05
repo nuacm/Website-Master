@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-	
+
 	# display a view in the pages directory, also used for index
 	def show
 		if valid_page?
