@@ -6,6 +6,11 @@ The website for Northeastern University Association of Computing Machinery. Acti
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+## Environments
+
+[Production](https://nuacm.herokuapp.com)
+[Staging](https://nuacm-staging.herokuapp.com)
+
 ### Prerequisites
 
 ```
@@ -39,7 +44,7 @@ The test suite is not currently setup. Plans to implement RSpec unit testing wit
 
 ## Deployment
 
-This application is deployed with Heroku. Master automatically deploys to the staging application, which can then be promoted to production. The current production URL is [nuacm.herokuapp.com](https://nuacm.herokuapp.com)
+This application is deployed with Heroku. Master automatically deploys to the [staging application](https://nuacm-staging.herokuapp.com), which can then be promoted to [production](https://nuacm.herokuapp.com).
 
 ## Built With
 
@@ -52,7 +57,7 @@ This app is open source and contribution is encouraged. To make updates open up 
 
 ## Authors
 
-* **Patrick McGrath** - *Head Developer* - [PatrickMcGrath29](https://github.com/PatrickMcGrath29)
+* **Patrick McGrath** - *Lead Developer* - [PatrickMcGrath29](https://github.com/PatrickMcGrath29)
 
 
 ## License
