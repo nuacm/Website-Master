@@ -6,11 +6,12 @@ The website for Northeastern University Association of Computing Machinery. Acti
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-## Environments
+### Environments
 
+```
 [Production](https://nuacm.herokuapp.com)
-
 [Staging](https://nuacm-staging.herokuapp.com)
+```
 
 ### Prerequisites
 
