@@ -8,4 +8,10 @@ class ApplicationController < ActionController::Base
   def admin_user?
     current_user && (current_user.admin? || current_user.super_admin?)
   end
+
+  def super_admin_user?
+    current_user && current_user.super_admin?
+  end
+
+  helper_method :admin_user?, :super_admin_user?
 end

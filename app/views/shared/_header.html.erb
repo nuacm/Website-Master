@@ -15,11 +15,12 @@
                   <%= icon("envelope") %>
                 <% end %>
               </li>
-              <li><%= header_account_buttons %></li>
+              <li><%= session_account_buttons %></li>
             </ul>
             <ul class='horizontal-list'>
               <li><%= link_to t("nav.events"), events_path, class: "button" %></li>
               <li><%= link_to t("nav.officers"), officers_path, class: "button" %></li>
+              <%= admin_account_buttons %>
             </ul>
           </div>
       </div>

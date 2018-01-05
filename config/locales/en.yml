@@ -12,6 +12,7 @@ en:
     officers: "Officers"
     login: "Sign In"
     logout: "Sign Out"
+    new_event: "New Event"
   home:
     headers:
       mission: "Mission"
