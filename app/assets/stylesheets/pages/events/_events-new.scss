@@ -1,0 +1,5 @@
+.event-form {
+  @include media-up($medium-screen) {
+    width: 50%;
+  }
+}

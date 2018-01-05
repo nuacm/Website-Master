@@ -1,5 +1,5 @@
 <div class="container">
-  <%= form_for @event, class: "event-form" do |f| %>
+  <%= form_for @event, html: { class: "event-form" } do |f| %>
     <div class="form-row">
       <div class="form-input">
         <%= f.label :headline %>
