@@ -8,10 +8,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Environments
 
-```
-[Production](https://nuacm.herokuapp.com)
-[Staging](https://nuacm-staging.herokuapp.com)
-```
+
+[Production - nuacm.herokuapp.com](https://nuacm.herokuapp.com)
+
+[Staging - nuacm-staging.herokuapp.com](https://nuacm-staging.herokuapp.com)
 
 ### Prerequisites
 
