@@ -9,6 +9,6 @@
 !/tmp/.keep
 .byebug_history
 /public/*
-/public/**
+/public/
 
 /node_modules
