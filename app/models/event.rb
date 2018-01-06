@@ -5,4 +5,12 @@ class Event < ApplicationRecord
   validates :abstract, presence: true
   validates :date_time, presence: true
   validates :speaker, presence: true
+
+  def self.upcoming
+    where ["date_time >= ?", DateTime.current]
+  end
+
+  def self.past
+    where(["date_time < ?", DateTime.current]).order("date_time DESC")
+  end
 end

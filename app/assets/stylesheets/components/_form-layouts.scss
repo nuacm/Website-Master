@@ -8,7 +8,9 @@
   @include flex-column();
   flex: 1 50%;
 
-  &:not(:first-child) {
-    margin-left: 10px;
+  @include media-up($medium-screen) {
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
   }
 }

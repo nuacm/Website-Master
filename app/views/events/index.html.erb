@@ -1,10 +1,23 @@
 <div class="container">
-	<div class="page-heading">
-		<h2><%= t("events.headlines.upcoming_events") %></h2>
-	</div>
-	<div class="event-listing">
-		<% @events.each do |event| %>
-			<%= render partial: "event_listing", locals: { event: event } %>
-		<% end %>
-	</div>
+  <% if @upcoming_events && !@upcoming_events.empty? %>
+  	<div class="page-heading">
+  		<h2><%= t("events.headlines.upcoming_events") %></h2>
+  	</div>
+  	<div class="event-listing">
+  		<% @upcoming_events.each do |event| %>
+  			<%= render partial: "event_listing", locals: { event: event } %>
+  		<% end %>
+  	</div>
+  <% end %>
+
+  <% if @past_events && !@past_events.empty? %>
+    <div class="page-heading">
+      <h2><%= t("events.headlines.past_events") %></h2>
+    </div>
+    <div class="event-listing">
+      <% @past_events.each do |event| %>
+        <%= render partial: "event_listing", locals: { event: event } %>
+      <% end %>
+    </div>
+  <% end %>
 </div>

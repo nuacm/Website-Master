@@ -2,9 +2,8 @@ class EventsController < ApplicationController
   before_action :authenticate_as_admin, only: [:new, :create]
 
 	def index
-		@events = Event.all.map do |event|
-      EventPresenter.new(event)
-    end
+		@upcoming_events = Event.upcoming.map{ |event| EventPresenter.new(event) }
+    @past_events = Event.past.map{ |event| EventPresenter.new(event) }
 	end
 
   def new
@@ -12,6 +11,7 @@ class EventsController < ApplicationController
   end
 
   def create
+    puts params
     event = Event.new(event_params)
     if event.save
       redirect_to event_path(event)
