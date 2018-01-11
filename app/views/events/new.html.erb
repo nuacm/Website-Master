@@ -28,24 +28,22 @@
         <%= f.text_field :company %>
       </div>
     </div>
-    <%= fields_for :location, @event.location do |f_location| %>
-      <div class="form-row">
-        <div class="form-input">
-          <%= f_location.label :room %>
-          <%= f_location.text_field :room %>
-        </div>
-        <div class="form-input">
-          <%= f_location.label :building %>
-          <%= f_location.text_field :building %>
-        </div>
+    <div class="form-row">
+      <div class="form-input">
+        <%= f.label :room %>
+        <%= f.text_field :room %>
       </div>
-      <div class="form-row">
-        <div class="form-input">
-          <%= f_location.label :address %>
-          <%= f_location.text_field :address %>
-        </div>
+      <div class="form-input">
+        <%= f.label :building %>
+        <%= f.text_field :building %>
       </div>
-    <% end %>
+    </div>
+    <div class="form-row">
+      <div class="form-input">
+        <%= f.label :address %>
+        <%= f.text_field :address %>
+      </div>
+    </div>
     <%= f.submit class: "button" %>
   <% end %>
 </div>
