@@ -7,7 +7,6 @@ en:
     officers: "Officers"
     login: "Sign In"
     logout: "Sign Out"
-    new_event: "New Event"
     admin: "Admin"
   home:
     headers:
@@ -28,3 +27,10 @@ en:
       company: "Sponsored By"
       abstract: "Abstract"
       time: "Time"
+    buttons:
+      edit: "Edit Event"
+  admin:
+    buttons:
+      new_event: "Create a New Event"
+      new_officer: "Add a New Officer"
+    header: "Admin Dashboard"

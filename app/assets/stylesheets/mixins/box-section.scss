@@ -1,0 +1,5 @@
+@mixin box-section {
+  background-color: $white;
+  box-shadow: $base-box-shadow;
+  border-radius: $base-border-radius;
+}

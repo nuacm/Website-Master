@@ -1,27 +1,22 @@
-<%= link_to event_path(event.id), class: "event-item" do %>
+<div class="event-item">
   <% if event.image.present? %>
   <% end %>
   <div class="event-information">
     <h3 class="event-headline"><%= event.headline %></h3>
 
     <div class="event-row">
-      <div class="event-detail">
-        <div class="visual-label"><%= t("events.labels.speaker") %></div>
-        <%= event.speaker %>
-      </div>
-    <% if event.company.present? %>
-      <div class="event-detail">
-        <div class="visual-label"><%= t("events.labels.company") %></div>
-        <%= event.company %>
-      </div>
-    <% end %>
-    </div>
-
-    <div class="event-row">
-      <div class="event-detail">
-        <div class="visual-label"><%= t("events.labels.abstract") %></div>
-        <%= event.abstract %>
-      </div>
+      <% if event.speaker.present? %>
+        <div class="event-detail">
+          <div class="visual-label"><%= t("events.labels.speaker") %></div>
+          <%= event.speaker %>
+        </div>
+      <% end %>
+      <% if event.company.present? %>
+        <div class="event-detail">
+          <div class="visual-label"><%= t("events.labels.company") %></div>
+          <%= event.company %>
+        </div>
+      <% end %>
     </div>
 
     <div class="event-row">
@@ -31,8 +26,24 @@
       </div>
       <div class="event-detail">
         <div class="visual-label"><%= t("events.labels.location") %></div>
-        <%= event.location %>
+        <%= event.shorthand_location %>, <%= event.address %>
       </div>
     </div>
+
+    <% if event.abstract.present? %>
+      <div class="event-row">
+        <div class="event-detail">
+          <div class="visual-label"><%= t("events.labels.abstract") %></div>
+          <%= event.abstract %>
+        </div>
+      </div>
+    <% end %>
+
+    <% if admin_user? %>
+      <div class="event-admin-buttons">
+        <%= link_to t("events.buttons.edit"), edit_event_path(event.id), class: "button" %>
+      </div>
+    <% end %>
+
   </div>
-<%  end %>
+</div>

@@ -1,9 +1,24 @@
-<section id='footer'>
-	<div class='container'>
-		<div class='col-xl-8 col-md-8 col-xs-12 col col-xl-offset-2 col-md-offset-2 text-center'>
-			<div class='footer'>
-				<p>Copyright Northeastern University ACM 2017</p>
-			</div>
-		</div>
+<section id="footer">
+	<div class="container">
+    <div class="footer-content">
+  		<div class="footer-info">
+        <p> Interested in giving a talk, or partnering with NuACM? Drop us a line at <a href='mail&#116;o&#58;&#37;61&#99;m&#64;cc&#115;&#46;&#110;&#37;&#54;&#53;u&#46;e&#100;u'>&#97;cm&#64;c&#99;s&#46;neu&#46;edu</a></p>
+  			<p>&copy NUACM 2018</p>
+  		</div>
+      <div class="footer-action">
+        <ul class="horizontal-list">
+          <li>
+            <%= link_to facebook_page_link, class: "button light" do %>
+              <%= icon("facebook-official") %>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to email_redirect, class: "button light" do %>
+              <%= icon("envelope") %>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    </div>
 	</div>
 </section>

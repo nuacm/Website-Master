@@ -1,29 +1,17 @@
-<div class="container content">
-  <div class="row">
-    <div class='navbar-fixed-top navbar'>
-      <div class='col-xl-10 col-md-10 col-xs-12 col-xl-offset-1 col-md-offset-1'>
-        <%= link_to (image_tag nuacm_logo_url, alt: "NUACM Logo", class: "logo", size: "250x80"), root_path %>
-          <div class='navbuttons'>
-            <ul class='horizontal-list'>
-              <li>
-                <%= link_to facebook_page_link, class: "button" do %>
-                  <%= icon("facebook-official") %>
-                <% end %>
-              </li>
-              <li>
-                <%= link_to email_redirect, class: "button" do %>
-                  <%= icon("envelope") %>
-                <% end %>
-              </li>
-              <li><%= session_account_buttons %></li>
-            </ul>
-            <ul class='horizontal-list'>
-              <li><%= link_to t("nav.events"), events_path, class: "button" %></li>
-              <li><%= link_to t("nav.officers"), officers_path, class: "button" %></li>
-              <%= admin_account_buttons %>
-            </ul>
-          </div>
-      </div>
+<div class='navbar'>
+  <div class="container">
+    <div class='navbar-content'>
+      <%= link_to (image_tag nuacm_logo_url, alt: "NUACM Logo", class: "logo", size: "250x80"), root_path %>
+        <div class='navbuttons'>
+          <ul class='horizontal-list'>
+            <li><%= session_account_button %></li>
+          </ul>
+          <ul class='horizontal-list'>
+            <li><%= link_to t("nav.events"), events_path, class: "button" %></li>
+            <li><%= link_to t("nav.officers"), officers_path, class: "button" %></li>
+            <%= admin_account_buttons %>
+          </ul>
+        </div>
     </div>
   </div>
 </div>

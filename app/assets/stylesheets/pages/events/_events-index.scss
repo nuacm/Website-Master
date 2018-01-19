@@ -21,3 +21,7 @@
 .event-detail {
   flex: 1 50%;
 }
+
+.event-admin-buttons {
+  @include padding(10px null);
+}

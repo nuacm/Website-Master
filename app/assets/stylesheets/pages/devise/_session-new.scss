@@ -1,3 +1,5 @@
+$login-panel-width: 450px;
+
 .new-session-wrapper {
   @include flex-column();
   @include padding(20px);
@@ -5,5 +7,9 @@
   box-shadow: $base-box-shadow;
   border-radius: $base-border-radius;
   margin: auto;
-  width: 30%;
+  width: $login-panel-width;
+
+  @include media-down($medium-screen) {
+    width: 95%;
+  }
 }

@@ -10,6 +10,15 @@
     background-color: $action-color-hover;
     color: $white;
   }
+
+  &.light {
+    border-color: $nuacm-blue;
+
+    &:hover {
+      background-color: $light-action-color-hover;
+      color: $action-color-hover;
+    }
+  }
 }
 
 // Bootstrap overrides

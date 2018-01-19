@@ -1,0 +1,19 @@
+.admin-wrapper {
+  @include box-section();
+  @include padding(20px);
+  margin: auto;
+  width: 80%;
+
+  @include media-down($medium-screen) {
+    width: 95%;
+  }
+
+  .form-input {
+    text-align: center;
+  }
+}
+
+.admin-header {
+  @include padding(10px null);
+  text-align: center;
+}

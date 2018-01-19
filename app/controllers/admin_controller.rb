@@ -1,4 +1,3 @@
 class AdminController < ApplicationController
-  def index
-  end
+  before_action :authenticate_as_admin
 end

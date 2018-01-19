@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-  before_action :authenticate_as_admin, only: [:new, :create]
+  before_action :authenticate_as_admin, only: [:new, :edit, :update, :destroy, :create]
 
 	def index
 		@upcoming_events = Event.upcoming.map{ |event| EventPresenter.new(event) }
@@ -13,10 +13,27 @@ class EventsController < ApplicationController
   def create
     event = Event.new(event_params)
     if event.save
-      redirect_to event_path(event)
+      redirect_to events_path(event)
     else
-      render new
+      :new
     end
+  end
+
+  def edit
+    @event = Event.find(params[:id])
+  end
+
+  def update
+    event = Event.find(params[:id])
+    if event && event.update(event_params)
+      redirect_to events_path
+    else
+      :edit
+    end
+  end
+
+  def destroy
+    Event.delete(params[:id])
   end
 
 	private

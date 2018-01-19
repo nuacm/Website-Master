@@ -1,8 +1,34 @@
+$footer-height: 175px;
+
 #footer {
-	background-color: #78797a;
+  background-color: $medium-gray;
+  color: white;
 }
 
-.footer {
-	margin: 30px 10px 30px 10px;
-	color: white;
+.footer-content {
+  @include flex-responsive();
+  min-height: $footer-height;
 }
+
+.footer-info,
+.footer-action {
+  @include flex-column();
+  @include padding(10px);
+  justify-content: center;
+}
+
+.footer-info {
+  align-items: center;
+  flex-basis: 40%;
+  text-align: center;
+}
+
+.footer-action {
+  align-items: flex-end;
+  flex-basis: 60%;
+
+  @include media-down($medium-screen) {
+    justify-content: center;
+  }
+}
+

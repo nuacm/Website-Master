@@ -1,5 +1,5 @@
 module HeaderHelper
-  def session_account_buttons
+  def session_account_button
     if user_signed_in?
       link_to t("nav.logout"), destroy_user_session_path, method: :delete, class: "button"
     else
