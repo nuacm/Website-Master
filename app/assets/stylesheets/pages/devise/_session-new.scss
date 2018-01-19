@@ -1,0 +1,9 @@
+.new-session-wrapper {
+  @include flex-column();
+  @include padding(20px);
+  background-color: $white;
+  box-shadow: $base-box-shadow;
+  border-radius: $base-border-radius;
+  margin: auto;
+  width: 30%;
+}

@@ -4,7 +4,6 @@ class Event < ApplicationRecord
   validates :headline, presence: true
   validates :abstract, presence: true
   validates :date_time, presence: true
-  validates :speaker, presence: true
   validates :room, presence: true
   validates :building, presence: true
 

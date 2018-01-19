@@ -10,7 +10,7 @@ module HeaderHelper
   def admin_account_buttons
     if admin_user?
       content_tag :li do
-        link_to t("nav.new_event"), new_event_path, class: "button"
+        link_to t("nav.admin"), admin_index_path, class: "button"
       end
     end
   end

@@ -1,9 +1,4 @@
 en:
-  global:
-    meeting_composite: "Wednesday at 6:00 PM"
-    meeting_day: "Wednesday"
-    meeting_hour: "6:00 PM"
-    meeting_room: "108 West Village G"
   links:
     facebook: "facebook page"
     mailing_list: "mailing list"
@@ -13,6 +8,7 @@ en:
     login: "Sign In"
     logout: "Sign Out"
     new_event: "New Event"
+    admin: "Admin"
   home:
     headers:
       mission: "Mission"

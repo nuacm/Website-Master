@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   resources :officers, path: "officers", only: %i(create index)
   resources :events, path: "events", only: %i(index new create show)
+  resources :admin, only: [:index]
 
   Rails.application.routes.draw do
    get "pages/:page" => "pages#show"

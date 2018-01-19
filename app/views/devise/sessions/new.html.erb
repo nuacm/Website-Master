@@ -1,0 +1,31 @@
+<div class="new-session-wrapper">
+  <h2>Log in</h2>
+
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "form-wrapper new-session-form" }) do |f| %>
+    <div class="form-row">
+      <div class="form-input">
+        <%= f.label :email %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-input">
+        <%= f.label :password %>
+        <%= f.password_field :password, autocomplete: "off" %>
+      </div>
+    </div>
+
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+    <div class="form-row">
+      <div class="form-input">
+        <%= f.submit "Log in", class: "button" %>
+      </div>
+    </div>
+  <% end %>
+  <hr>
+  <%= render "devise/shared/links" %>
+</div>
