@@ -21,6 +21,9 @@
 						<div class="col-line-item-info"><%= officer.position %></div>
 					</div>
 				</div>
+				<% if admin_user? %>
+					<%= link_to t("officers.buttons.edit_officer"), edit_officer_path(officer), class: "button" %>
+				<% end %>
 			</div>
 		<% end %>
 	</div>

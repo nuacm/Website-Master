@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   root 'pages#show', page: "index"
 
-  resources :officers, path: "officers", only: %i(new create index)
+  resources :officers, path: "officers", only: [:index, :new, :create, :edit, :update]
   resources :events, path: "events", except: [:show]
   resources :admin, only: [:index]
 

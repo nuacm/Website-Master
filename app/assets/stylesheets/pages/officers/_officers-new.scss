@@ -1,0 +1,10 @@
+.officer-form {
+  @include box-section();
+  @include padding(20px);
+  margin: auto;
+  width: 70%;
+
+  @include media-down($medium-screen) {
+    width: 95%;
+  }
+}

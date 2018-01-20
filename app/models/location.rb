@@ -2,23 +2,19 @@ class Location
   include ActiveModel::Model
   attr_accessor :room, :building, :address
 
-  def self.default_room
-    "108"
-  end
-
-  def self.default_building
-    "West Village G"
-  end
-
-  def self.default_address
-    "450 Parker St. Boston, Ma"
-  end
-
-  def format_short
+  def short_form
     "#{room} #{building}"
   end
 
-  def format_extended
+  def long_form
     "#{room} #{building}, #{address}"
+  end
+
+  def self.default
+    new(
+      room: 108,
+      building: "West Village G",
+      address: "450 Parker Street",
+    )
   end
 end

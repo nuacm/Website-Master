@@ -19,6 +19,11 @@ en:
         name: "Name"
         position: "Position"
         year: "Year"
+    headers:
+      edit_officer: "Edit Officer"
+      new_officer: "Create a New Officer"
+    buttons:
+      edit_officer: "Edit Officer"
   events:
     headlines:
       upcoming_events: "Upcoming Events"

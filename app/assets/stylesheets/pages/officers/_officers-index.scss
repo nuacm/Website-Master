@@ -3,14 +3,16 @@
 	position: relative;
 
 	.officer-bio {
+    @include box-section();
     @include margin(10px);
     @include padding(10px);
     @include flex-column();
-    background-color: $light-gray;
-    border: $base-border;
-    border-radius: $base-border-radius;
 		flex: 0 1 calc(25% - 40px);
     max-width: 25%;
+
+    .button {
+      text-align: center;
+    }
 	}
 
   .officer-image {

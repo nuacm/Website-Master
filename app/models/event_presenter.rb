@@ -10,16 +10,12 @@ class EventPresenter
     nil
   end
 
-  def shorthand_location
-    if @event.room.present? && @event.building.present?
-      "#{@event.room} #{@event.building}"
-    end
-  end
-
-  def address
-    if @event.address.present?
-      @event.address
-    end
+  def location
+    Location.new(
+      room: @event.room,
+      building: @event.building,
+      address: @event.address,
+    )
   end
 
   def full_time

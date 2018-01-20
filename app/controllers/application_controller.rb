@@ -5,6 +5,10 @@ class ApplicationController < ActionController::Base
     authenticate_user! && admin_user?
   end
 
+  def authenticate_as_super_admin
+    authenticate_user! && super_admin_user?
+  end
+
   def admin_user?
     current_user && (current_user.admin? || current_user.super_admin?)
   end
@@ -14,11 +18,10 @@ class ApplicationController < ActionController::Base
   end
 
   def default_meeting_details
-
     OpenStruct.new(
       location: default_location,
       time: "6:00 PM",
-      composite_meeting_time: "108 West Village G at 6:00 PM",
+      composite_meeting_time: "#{default_location.short_form} at 6:00 PM",
       composite_meeting_schedule: "Wednesday at 6:00 PM",
     )
   end
@@ -28,13 +31,7 @@ class ApplicationController < ActionController::Base
   private
 
   def default_location
-    OpenStruct.new(
-      room: 108,
-      building: "West Village G",
-      address: "450 Parker Street",
-      short_form: "108 West Village G",
-      long_form: "108 West Village G, 450 Parker Steet",
-    )
+    Location.default
   end
 
 end
