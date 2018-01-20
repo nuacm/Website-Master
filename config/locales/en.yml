@@ -29,6 +29,7 @@ en:
       time: "Time"
     buttons:
       edit: "Edit Event"
+      delete: "Delete Event"
   admin:
     buttons:
       new_event: "Create a New Event"

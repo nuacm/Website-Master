@@ -31,17 +31,17 @@
     <div class="form-row">
       <div class="form-input">
         <%= f.label :room %>
-        <%= f.text_field :room %>
+        <%= f.text_field :room, value: default_meeting_details.location.room %>
       </div>
       <div class="form-input">
         <%= f.label :building %>
-        <%= f.text_field :building %>
+        <%= f.text_field :building, value: default_meeting_details.location.building %>
       </div>
     </div>
     <div class="form-row">
       <div class="form-input">
         <%= f.label :address %>
-        <%= f.text_field :address %>
+        <%= f.text_field :address, value: default_meeting_details.location.address %>
       </div>
     </div>
     <%= f.submit class: "button" %>

@@ -1,0 +1,15 @@
+.edit-event-wrapper {
+  @include box-section();
+  @include padding(20px);
+  width: 80%;
+  margin: auto;
+
+  @include media-down($medium-screen) {
+    width: 95%;
+  }
+}
+
+.edit-event-buttons {
+  display: flex;
+  justify-content: space-between;
+}

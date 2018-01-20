@@ -1,49 +1,54 @@
 <div class="container">
-  <%= form_for @event do |f| %>
-    <div class="form-row">
-      <div class="form-input">
-        <%= f.label :headline %>
-        <%= f.text_field :headline %>
+  <div class="edit-event-wrapper">
+    <%= form_for @event do |f| %>
+      <div class="form-row">
+        <div class="form-input">
+          <%= f.label :headline %>
+          <%= f.text_field :headline %>
+        </div>
       </div>
-    </div>
-    <div class="form-row">
-      <div class="form-input">
-        <%= f.label :abstract %>
-        <%= f.text_area :abstract %>
+      <div class="form-row">
+        <div class="form-input">
+          <%= f.label :abstract %>
+          <%= f.text_area :abstract %>
+        </div>
       </div>
-    </div>
-    <div class="form-row">
-      <div class="form-input">
-        <%= f.label :date_time %>
-        <%= f.datetime_local_field :date_time %>
+      <div class="form-row">
+        <div class="form-input">
+          <%= f.label :date_time %>
+          <%= f.datetime_local_field :date_time %>
+        </div>
       </div>
-    </div>
-    <div class="form-row">
-      <div class="form-input">
-        <%= f.label :speaker %>
-        <%= f.text_field :speaker %>
+      <div class="form-row">
+        <div class="form-input">
+          <%= f.label :speaker %>
+          <%= f.text_field :speaker %>
+        </div>
+        <div class="form-input">
+          <%= f.label :company %>
+          <%= f.text_field :company %>
+        </div>
       </div>
-      <div class="form-input">
-        <%= f.label :company %>
-        <%= f.text_field :company %>
+      <div class="form-row">
+        <div class="form-input">
+          <%= f.label :room %>
+          <%= f.text_field :room %>
+        </div>
+        <div class="form-input">
+          <%= f.label :building %>
+          <%= f.text_field :building %>
+        </div>
       </div>
-    </div>
-    <div class="form-row">
-      <div class="form-input">
-        <%= f.label :room %>
-        <%= f.text_field :room, value: default_meeting_details.location.room %>
+      <div class="form-row">
+        <div class="form-input">
+          <%= f.label :address %>
+          <%= f.text_field :address %>
+        </div>
       </div>
-      <div class="form-input">
-        <%= f.label :building %>
-        <%= f.text_field :building, value: default_meeting_details.location.building %>
+      <div class="edit-event-buttons">
+      <%= f.submit class: "button" %>
+        <%= link_to t("events.buttons.delete"), event_path(@event), method: :delete, data: { confirm: "Are you sure you want to delete this event?" }, class: "button" %>
       </div>
-    </div>
-    <div class="form-row">
-      <div class="form-input">
-        <%= f.label :address %>
-        <%= f.text_field :address, value: default_meeting_details.location.address %>
-      </div>
-    </div>
-    <%= f.submit class: "button" %>
-  <% end %>
+    <% end %>
+  </div>
 </div>
