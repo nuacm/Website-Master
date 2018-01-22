@@ -19,13 +19,13 @@ $footer-height: 175px;
 
 .footer-info {
   align-items: center;
-  flex-basis: 40%;
+  flex-basis: 60%;
   text-align: center;
 }
 
 .footer-action {
   align-items: flex-end;
-  flex-basis: 60%;
+  flex-basis: 40%;
 
   @include media-down($medium-screen) {
     justify-content: center;

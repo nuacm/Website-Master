@@ -29,3 +29,9 @@ a {
     color: $text-color !important;
   }
 }
+
+.social-media-button {
+  @include padding(15px);
+  border: none;
+  border-radius: 50%;
+}
