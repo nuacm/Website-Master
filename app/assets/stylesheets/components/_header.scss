@@ -15,6 +15,10 @@
 
   .logo {
     margin-top: 15px;
+
+    @include media-down($medium-screen) {
+      @include size(auto 50px);
+    }
   }
 
   .navbuttons {

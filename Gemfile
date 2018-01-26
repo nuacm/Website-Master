@@ -13,6 +13,7 @@ gem 'font-awesome-sass'
 gem 'pg'
 gem 'bourbon'
 gem 'devise'
+gem 'sendgrid-ruby'
 
 group :development, :test do
   gem 'byebug', platform: :mri

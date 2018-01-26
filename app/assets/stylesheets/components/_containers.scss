@@ -1,5 +1,6 @@
 .container,
-.container-for-grid {
+.container-for-grid,
+.container-small {
   @include margin(null auto);
 }
 
@@ -9,6 +10,7 @@
 }
 
 .container-small {
+  @include padding(null $gutter-size);
   max-width: $container-width * 0.65;
 }
 

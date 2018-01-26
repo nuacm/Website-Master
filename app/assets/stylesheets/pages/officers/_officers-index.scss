@@ -8,7 +8,10 @@
     @include padding(10px);
     @include flex-column();
 		flex: 0 1 calc(25% - 40px);
-    max-width: 25%;
+
+    @include media-up($medium-screen) {
+      max-width: 250px;
+    }
 
     .button {
       text-align: center;

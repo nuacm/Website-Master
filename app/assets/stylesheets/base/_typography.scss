@@ -2,6 +2,12 @@
   display: inline !important;
 }
 
+html {
+  @media (max-width: $medium-screen - 1) {
+    font-size: 50%;
+  }
+}
+
 body {
   font-family: $base-font-family;
 }
