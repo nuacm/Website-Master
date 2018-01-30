@@ -12,7 +12,7 @@ module ExternalLinksHelper
   end
 
   def email_redirect
-    "mailto:&#116;o&#58;&#37;61&#99;m&#64;cc&#115;&#46;&#110;&#37;&#54;&#53;u&#46;e&#100;u"
+    "mail&#116;o&#58;&#37;61&#99;m&#64;cc&#115;&#46;&#110;&#37;&#54;&#53;u&#46;e&#100;u"
   end
 
   def nuacm_logo_url
